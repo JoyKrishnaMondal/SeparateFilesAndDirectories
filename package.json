@@ -1,0 +1,26 @@
+{
+  "name": "SeparateFilesAndDirectories",
+  "version": "0.0.1",
+  "description": "Async Files and Directories seperation",
+  "author": "joykrishnamondal <joykrishnamondal@gmail.com>",
+  "main": "SeparateFilesAndDirectories.js",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/JoyKrishnaMondal/SeparateFilesAndDirectories.git"
+},
+  "keywords": [
+  "livescript",
+  "Async",
+  "DevOps",
+  "FindFiles and Directories"
+],
+  "dependencies": {
+    "prelude-ls": "*",
+    "GetRidOfError":"https://github.com/JoyKrishnaMondal/GetRidOfError.git"    
+  },
+  "devDependencies": {
+    "simple-livescript-watch": "*"
+  },
+  "license": "MIT"
+}
+  
