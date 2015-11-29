@@ -7,8 +7,9 @@
 {SeparateFilesAndDir} = require "SeparateFilesAndDirectories"
 
 
-
-# We will be using LiveScript backcalls - Look at LiveScript docs to learn what they are (hint : alternative solution to using promises )
+# We will be using LiveScript backcalls - 
+# Look at LiveScript docs to learn what they are 
+# (hint : alternative solution to using promises )
 
 DirectoryToSearch = __dirname # __dirname is current Directory 
 
