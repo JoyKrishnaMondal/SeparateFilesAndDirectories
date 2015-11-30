@@ -1,13 +1,10 @@
-fs = require "fs"
-
 _ = require "prelude-ls"
 
 path = require 'path'
 
-fs = require "GetRidOfError" |> require "fs"
+fs = require "fs" |> require "GetRidOfError"
 
 {readdir,stat} = fs
-
 
 Main = {}
 
