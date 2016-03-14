@@ -1,6 +1,6 @@
 _ = require "prelude-ls"
 
-path = require 'path'
+delimit = (require 'path').sep
 
 fs = require "fs" |> require "GetRidOfError"
 
@@ -25,7 +25,7 @@ Main.SeparateFilesAndDir = (NameOfDir,CallBack) ->
 	for I in ListOfFiles
 
 
-		StatObj <-! stat I
+		StatObj <-! stat NameOfDir + delimit + I
 
 		if StatObj.isFile!
 
@@ -38,6 +38,7 @@ Main.SeparateFilesAndDir = (NameOfDir,CallBack) ->
 		if K is Size
 				# Reason for setTimeOut doing this is to empty the event loop before running the next bit of calculations
 				setTimeout -> CallBack (Files:Files,Directories:Directories),0
+
 		K += 1
 
 module.exports = Main
